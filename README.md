@@ -4,7 +4,7 @@ A `README.md` file is a very useful component of any project repository. As you 
 
 ## About
 
-The purpose of this repository is to distribut handouts during a SESYNC training event. The content changes between short courses, but it typically includes worksheets for different tutorials and any necessary data.
+The purpose of this repository is to distribute handouts during a SESYNC training event. The content changes between short courses, but it typically includes worksheets for different tutorials and any necessary data.
 
 ## Data
 
@@ -33,7 +33,7 @@ database should be used for research purposes.
 
 `nlcd_agg.*`, `nlcd_proj.*`
 
-A portion of the National Land Cover Database (http://www.mrlc.gov/nlcd2011.php) 
+A portion of the [National Land Cover Database](http://www.mrlc.gov/nlcd2011.php) 
 that has been cropped and reduced to a lower resolution in order to speed up processing
 time for this tutorial. The *nlcd_agg* raster is in the original Albers equal-area
 projection, whereas the *nlcd_proj* raster has been reprojected to Web Mercator
@@ -43,7 +43,7 @@ for use with the `leaflet` package.
 
 `cb_500k_maryland/*`
 
-Maryland county boundaries extracted from the US Census county boundaries
-shapefile (http://www2.census.gov/geo/tiger/GENZ2014/shp/cb_2014_us_county_500k.zip).
+Maryland county boundaries extracted from the US Census [county boundaries
+shapefile](http://www2.census.gov/geo/tiger/GENZ2014/shp/cb_2014_us_county_500k.zip).
 
 ---
