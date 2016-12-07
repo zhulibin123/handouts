@@ -13,7 +13,7 @@ LESSONS := \
 
 .PHONY: all $(LESSONS)
 
-all: $(LESSONS)
+all: $(LESSONS) # could give a recipe to commit and push, if bold
 
 $(LESSONS): %: | build/%
 	git checkout master
