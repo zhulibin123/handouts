@@ -16,6 +16,7 @@ LESSONS := \
 all: $(LESSONS)
 
 $(LESSONS): %: | build/%
+	git checkout master
 	$(MAKE) -C $| course
 
 build/%: | build
