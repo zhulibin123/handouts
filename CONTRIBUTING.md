@@ -1,10 +1,10 @@
 # Welcome to a SESYNC Training Event
 
-This document explains how to contribute work to your own GitHub repository, while keeping a link to the SESYNC-ci/handouts repo for any updates. But first, how did you create your own copy of the repository?
+This document explains how to contribute work to your own GitHub repository, while keeping a link to the SESYNC-ci/handouts repo for any updates. So you get the right instructions, choose how you created your own copy of the repository?
 
 - [I made a local clone directly from SESYNC-ci/handouts.](#local-clone)
-- [I imported SESYNC-ci/handouts into my own repo on GitHub](#github-import)
-- [I forked SESYNC-ci/handouts on GitHub.](#github-fork)
+- [I *imported* SESYNC-ci/handouts on GitHub](#github-import)
+- [I *forked* SESYNC-ci/handouts on GitHub.](#github-fork)
 
 ## Local Clone
 
@@ -44,4 +44,4 @@ Subsequently, a `git push` will publish those commits, along with any of your ow
 
 ## GitHub Fork
 
-As the proud owner of a repository forked from SESYNC-ci/handouts on GitHub, you can easilly issue "pull requests" that ask the instructor to update the original SESYNC-ci/handouts repo with your commits. That's not really something you're likely going to do. On the other hand, you may want to pull commits made by the instructor to your own repository. Follow the [steps above](#github-import) as if you had imported (rather than forked) the original repo.
+As the proud owner of a repository forked from SESYNC-ci/handouts on GitHub, you can easilly issue "pull requests" that ask the instructor to update the original SESYNC-ci/handouts repo with your commits. But that's not really something you're likely going to do. On the other hand, you may want to pull commits made by the instructor to your own repository. You have two options: 1) follow the [steps above](#github-import) as if you had imported (rather than forked) the original repo; 2) issue and then merge a '[pull requests](https://help.github.com/articles/about-pull-requests/)' directly from GitHub with the base fork set to your fork and the head fork set to SESYNC-ci/handouts (i.e. the reverse of the default settings for a new pull request).
