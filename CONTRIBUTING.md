@@ -44,7 +44,7 @@ Subsequently, a `git push` will publish those commits, along with any of your ow
 
 ## GitHub Fork
 
-As the proud owner of a repository forked from SESYNC-ci/handouts on GitHub, you can easilly issue "pull requests" that ask the instructor to update the original SESYNC-ci/handouts repo with your commits. But that's not really something you're likely going to do. On the other hand, you may want to pull commits made by the instructor to your own repository. You have two options:
+As the proud owner of a repository forked from SESYNC-ci/handouts on GitHub, you can easilly issue "pull requests" that ask the instructor to update the original SESYNC-ci/handouts repo with your commits. But that's not really something you're likely going to do. On the other hand, you may want to pull commits made by the instructor to your own repository, in case there are updates to a worksheet or data. You have two options:
 
 1. Follow the [steps above](#github-import) as if you had imported (rather than forked) the original repo.
-2. Issue and then merge a '[pull requests](https://help.github.com/articles/about-pull-requests/)' directly from GitHub with the base fork set to your fork and the head fork set to SESYNC-ci/handouts (i.e. the reverse of the default settings for a new pull request).
+2. Issue and then merge a '[pull request](https://help.github.com/articles/about-pull-requests/)' directly from GitHub with the 'base fork' set to your fork and the 'head fork' set to SESYNC-ci/handouts (i.e. the reverse of the default settings for a new pull request).
