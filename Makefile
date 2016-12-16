@@ -14,6 +14,7 @@ LESSONS := \
 .PHONY: all $(LESSONS)
 
 all: $(LESSONS) # could give a recipe to commit and push, if bold
+	rsync -au --delete build/data/ data/
 
 $(LESSONS): %: | build/%
 	git checkout master
@@ -26,7 +27,7 @@ build/%: | build
 	git -C $@ branch --track upstream upstream/master
 
 build:
-	mkdir build
+	mkdir -p build/data
 
 # could have lessons put data into build/data, then let rsync take care of syncing to delete non-needed data
 # no solution for worksheets though
