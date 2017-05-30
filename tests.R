@@ -9,6 +9,7 @@ if (sysname == 'Darwin') {
 }
 
 # Tests
+library(rJava); .jinit()
 library(RNetLogo)
 library(ggplot2)
 
@@ -18,8 +19,9 @@ message("On a Mac, in might be within /Applications/NetLogo 5.3.1/.")
 message("On Windows, it might be in C:\\Program Files\\NetLogo 5.3.1\\app\\.")
 invisible(readline("Press return to continue ..."))
 
-nl_path <- dirname(file.choose())
-NLStart(nl_path, gui=FALSE)
+nl_jar <- file.choose()
+nl_path <- dirname(nl_jar)
+NLStart(nl_path, gui = FALSE, nl.jarname = basename(nl_jar))
 NLLoadModel(file.path(nl_path, model_path))
 NLCommand("setup")
 NLReport("count sheep")
