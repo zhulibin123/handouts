@@ -72,6 +72,8 @@ to load-pop
   file-open "..." ;Add population CSV file
   while [not file-at-end?]
   [let row csv:from-row file-read-line
+    ;let d_name item 0 row
+    ;let district_name upper-case-string d_name
     let district_name item 0 row
     let district_pop item 4 row
     ask turtles with [name = district_name]
