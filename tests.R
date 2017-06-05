@@ -14,9 +14,9 @@ library(RNetLogo)
 library(ggplot2)
 
 message("")
-message("Find the NetLogo.jar file in your NetLogo installation.")
-message("On a Mac, in might be within /Applications/NetLogo 5.3.1/.")
-message("On Windows, it might be in C:\\Program Files\\NetLogo 5.3.1\\app\\.")
+message("Find the 'netlogo-6.0.1.jar' file in your NetLogo installation.")
+message("On a Mac, in might be within /Applications/NetLogo 6.0.1/.")
+message("On Windows, it might be in C:\\Program Files\\NetLogo 6.0.1\\app\\.")
 invisible(readline("Press return to continue ..."))
 
 nl_jar <- file.choose()
