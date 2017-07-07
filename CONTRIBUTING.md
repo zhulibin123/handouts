@@ -8,7 +8,7 @@ This document explains how to contribute work to your own GitHub repository, whi
 
 ## GitHub Import
 
-Once you have created a local clone, you'll be able to push commits up to your GitHub repository with a simple `git push`. To create the local clone, copy the URL from the green "Clone or download" button, open a shell where you want to create a new folder, and enter:
+The GitHub "import" feature creates a duplicate of the handouts repository under your username on GitHub. You have full control over this copy, to clone, push, and add collaborators. Once you have created a local clone, for example, you'll be able to push commits up to your GitHub repository with a simple `git push`. To create the local clone, copy the URL from the green "Clone or download" button, open a shell where you want to create a new folder, and enter:
 
     git clone <URL>
 
