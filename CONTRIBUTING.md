@@ -2,25 +2,15 @@
 
 This document explains how to contribute work to your own GitHub repository, while keeping a link to the SESYNC-ci/handouts repo for any updates. So you get the right instructions, choose how you created your own copy of the repository?
 
-- [I *imported* SESYNC-ci/handouts on GitHub.](#github-import)
-- [I made a local clone of SESYNC-ci/handouts.](#local-clone)
 - [I *forked* SESYNC-ci/handouts on GitHub.](#github-fork)
+- [I made a local clone of SESYNC-ci/handouts.](#local-clone)
+- [I *imported* SESYNC-ci/handouts on GitHub.](#github-import)
 
-## GitHub Import
+## GitHub Fork
 
-The GitHub "import" feature creates a duplicate of the handouts repository under your username on GitHub. You have full control over this copy, to clone, push, and add collaborators. Once you have created a local clone, for example, you'll be able to push commits up to your GitHub repository with a simple `git push`. To create the local clone, copy the URL from the green "Clone or download" button, open a shell where you want to create a new folder, and enter:
+By forking from SESYNC-ci/handouts on GitHub, you have effectively become the owner of a mirror of the handouts repository. You have full control over this copy, to clone, push, and add collaborators. Once you have created a local clone, for example, you'll be able to push commits up to your repository with a simple `git push`.
 
-    git clone <URL>
-
-But it would also be good to set up a link to the original SESYNC-ci/handouts repository, so you can pull (i.e. download and merge) any changes or additions from the instructor. With the shell opened to anywhere within your local clone, enter:
-
-    git remote add upstream https://github.com/sesync-ci/handouts.git
-   
-To merge changes from upstream, you can now enter the following anytime there are new commits to SESYNC-ci/handouts.
-
-    git pull upstream master
-   
-Subsequently, a `git push` will publish those commits, along with any of your own, to your remote repository on GitHub.
+Your fork remains linked to the original repository, which you can use to update your repository with changes made by the instructor on SESYNC-ci/handouts if necessaryy. Issue a '[pull request](https://help.github.com/articles/about-pull-requests/)' directly from GitHub with the 'base fork' set to your fork and the 'head fork' set to SESYNC-ci/handouts (i.e. the reverse of the default settings for a new pull request). Then merge your pull request.
 
 ## Local Clone
 
@@ -42,9 +32,6 @@ The `-u origin` option sets up the origin to sync with the "master" branch of yo
    
 You are now able to commit and push any changes you make locally to your own repo on GitHub, while also merging any changes your instructor makes upstream.
 
-## GitHub Fork
+## GitHub Import
 
-As the proud owner of a repository forked from SESYNC-ci/handouts on GitHub, you can easilly issue "pull requests" that ask the instructor to update the original SESYNC-ci/handouts repo with your commits. But that's not really something you're likely going to do. On the other hand, you may want to pull commits made by the instructor to your own repository, in case there are updates to a worksheet or data. You have two options:
-
-1. Follow the [steps above](#github-import) as if you had imported (rather than forked) the original repo.
-2. Issue and then merge a '[pull request](https://help.github.com/articles/about-pull-requests/)' directly from GitHub with the 'base fork' set to your fork and the 'head fork' set to SESYNC-ci/handouts (i.e. the reverse of the default settings for a new pull request).
+Since we began using [git-lfs] on sesync-ci/handouts, you probably won't be able to use the GitHub importer to duplicate the repository.
