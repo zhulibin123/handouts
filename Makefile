@@ -5,11 +5,10 @@
 
 GH := git@github.com:sesync-ci/
 LESSONS := \
-    basic-netlogo-lesson \
-    netlogo-programming-lesson \
-    basic-git-lesson \
-    rnetlogo-lesson \
-    gis-abm-lesson
+    basic-R-lesson \
+    introdb-lesson \
+    data-manipulation-in-R-lesson \
+    basic-RMarkdown-lesson
 
 .PHONY: all $(LESSONS)
 
