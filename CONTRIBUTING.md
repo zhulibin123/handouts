@@ -2,9 +2,25 @@
 
 This document explains how to contribute work to your own GitHub repository, while keeping a link to the SESYNC-ci/handouts repo for any updates. So you get the right instructions, choose how you created your own copy of the repository?
 
-- [I made a local clone directly from SESYNC-ci/handouts.](#local-clone)
-- [I *imported* SESYNC-ci/handouts on GitHub](#github-import)
+- [I *imported* SESYNC-ci/handouts on GitHub.](#github-import)
+- [I made a local clone of SESYNC-ci/handouts.](#local-clone)
 - [I *forked* SESYNC-ci/handouts on GitHub.](#github-fork)
+
+## GitHub Import
+
+Once you have created a local clone, you'll be able to push commits up to your GitHub repository with a simple `git push`. To create the local clone, copy the URL from the green "Clone or download" button, open a shell where you want to create a new folder, and enter:
+
+    git clone <URL>
+
+But it would also be good to set up a link to the original SESYNC-ci/handouts repository, so you can pull (i.e. download and merge) any changes or additions from the instructor. With the shell opened to anywhere within your local clone, enter:
+
+    git remote add upstream https://github.com/sesync-ci/handouts.git
+   
+To merge changes from upstream, you can now enter the following anytime there are new commits to SESYNC-ci/handouts.
+
+    git pull upstream master
+   
+Subsequently, a `git push` will publish those commits, along with any of your own, to your remote repository on GitHub.
 
 ## Local Clone
 
@@ -25,22 +41,6 @@ The `-u origin` option sets up the origin to sync with the "master" branch of yo
     git pull upstream master
    
 You are now able to commit and push any changes you make locally to your own repo on GitHub, while also merging any changes your instructor makes upstream.
-
-## GitHub Import
-
-Once you have created a local clone, you'll be able to push commits up to your GitHub repository with a simple `git push`. To create the local clone, copy the URL from the green "Clone or download" button, open a shell where you want to create a new folder, and enter:
-
-    git clone <URL>
-
-But it would also be good to set up a link to the original SESYNC-ci/handouts repository, so you can pull (i.e. download and merge) any changes or additions from the instructor. With the shell opened to anywhere within your local clone, enter:
-
-    git remote add upstream https://github.com/sesync-ci/handouts.git
-   
-To merge changes from upstream, you can now enter the following anytime there are new commits to SESYNC-ci/handouts.
-
-    git pull upstream master
-   
-Subsequently, a `git push` will publish those commits, along with any of your own, to your remote repository on GitHub.
 
 ## GitHub Fork
 
