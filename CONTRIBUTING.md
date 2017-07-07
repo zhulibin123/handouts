@@ -4,7 +4,7 @@ This document explains how to contribute work to your own GitHub repository, whi
 
 - [I *forked* SESYNC-ci/handouts on GitHub.](#github-fork)
 - [I made a local clone of SESYNC-ci/handouts.](#local-clone)
-- [I *imported* SESYNC-ci/handouts on GitHub.](#github-import)
+- [~~I *imported* SESYNC-ci/handouts on GitHub.~~](#github-import)
 
 ## GitHub Fork
 
