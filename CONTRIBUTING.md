@@ -34,4 +34,4 @@ You are now able to commit and push any changes you make locally to your own rep
 
 ## GitHub Import
 
-Since we began using [git-lfs] on sesync-ci/handouts, you probably won't be able to use the GitHub importer to duplicate the repository.
+Since we began using [git-lfs](https://git-lfs.github.com) on sesync-ci/handouts, you probably won't be able to use the GitHub importer to duplicate the repository.
