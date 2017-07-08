@@ -8,7 +8,8 @@ LESSONS := \
     basic-R-lesson \
     introdb-lesson \
     data-manipulation-in-R-lesson \
-    basic-RMarkdown-lesson
+    basic-RMarkdown-lesson \
+    graphics-with-ggplot2-lesson
 
 .PHONY: all $(LESSONS)
 
