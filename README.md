@@ -6,7 +6,7 @@ A `README.md` file is a very useful component of any project repository. As you 
 
 The purpose of this repository is to distribute handouts during a SESYNC training event. The content changes between short courses, but it typically includes worksheets for different tutorials and any necessary data.
 
-Most trainees will fork this repository during a short course. Following a short course, the content will be archived as a zip file. To get the handouts from a past short course: navigate to [release](/releases), select your course by its starting date, and download `handouts.zip`. The zip does not contain a git repository---only the worksheets and necessary data.
+Most trainees will fork this repository during a short course. Following a short course, the content will be archived as a zip file. To get the handouts from a past short course: navigate to [releases](../../releases), select your course by its starting date, and download `handouts.zip`. The zip does not contain a git repository---only the worksheets and necessary data.
 
 ## Data
 
