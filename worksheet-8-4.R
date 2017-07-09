@@ -28,7 +28,7 @@ server <- function(input, output) {
   
   output[['species_plot']] <- renderPlot(
     surveys %>%
-    filter(species_id == input[['pick_species']]) %>%
+    filter(id == input[['pick_species']]) %>%
     ...
     ggplot(aes(year)) +
     geom_bar()
