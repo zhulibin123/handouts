@@ -15,7 +15,7 @@ in2 <- ...('slider_months',
                    min = 1,
                    max = 12, 
                    value = ...)
-side <- sidebarPanel(h3('Options', align='center'), ...)
+side <- sidebarPanel('Options', ...)
 out2 <- plotOutput('species_plot')
 main <- mainPanel(out2)
 tab <- tabPanel(title = 'Species',
