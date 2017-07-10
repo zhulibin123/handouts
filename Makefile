@@ -10,7 +10,8 @@ LESSONS := \
     data-manipulation-in-R-lesson \
     basic-RMarkdown-lesson \
     graphics-with-ggplot2-lesson \
-    basic-Shiny-lesson
+    basic-Shiny-lesson \
+    geospatial-packages-in-R-lesson
 
 .PHONY: all $(LESSONS)
 
