@@ -14,20 +14,22 @@ LESSONS := \
     geospatial-packages-in-R-lesson \
     basic-Python-lesson
 
-.PHONY: all $(LESSONS)
+.PHONY: all pre-build $(LESSONS)
 
-all: $(LESSONS) # could give a recipe to commit and push, if bold
+all: pre-build $(LESSONS) # could give a recipe to commit and push, if bold
 	rsync -au --delete build/data/ data/
 
-$(LESSONS): %: | build/%
+pre-build:
 	git checkout master
+
+$(LESSONS): %: | build/%
 	$(MAKE) -C $| course
 
 build/%: | build
 	git clone $(GH)$(@:build/%=%).git $@
 	git -C $@ remote add upstream $(GH)lesson-style.git
 	git -C $@ fetch upstream
-	git -C $@ branch --track upstream upstream/master
+	#git -C $@ branch --track upstream upstream/master
 
 build:
 	mkdir -p build/data
