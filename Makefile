@@ -29,7 +29,6 @@ build/%: | build
 	git clone $(GH)$(@:build/%=%).git $@
 	git -C $@ remote add upstream $(GH)lesson-style.git
 	git -C $@ fetch upstream
-	#git -C $@ branch --track upstream upstream/master
 
 build:
 	mkdir -p build/data
