@@ -11,7 +11,8 @@ LESSONS := \
     basic-RMarkdown-lesson \
     graphics-with-ggplot2-lesson \
     basic-Shiny-lesson \
-    geospatial-packages-in-R-lesson
+    geospatial-packages-in-R-lesson \
+    basic-Python-lesson
 
 .PHONY: all $(LESSONS)
 
