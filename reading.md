@@ -36,19 +36,19 @@ If you don't trust it works, pretend to "compute" the procedure for the array of
 
 ## Snippet 1
 
-~~~r
+```r
 values <- c(6, 42, 13, 2, 9, -8, 27)
 total <- 0
 for (i in 1:length(values) {
     total <- total + values[i]
 }
-~~~
+```
 
 What does this R code do?
 
 ## Snippet 2
 
-~~~r
+```r
 test_value <- 98
 is_even <- function(x) {
     output <- FALSE
@@ -65,17 +65,17 @@ is_even <- function(x) {
 if (!evenness(test_value)) {
     warning('Test failed.')
 }
-~~~
+```
 
 What does this R code do?
 
-What does the "!" do?
+What does `!` mean?
 
-What kind of input would cause the "is_even" function to print a warning?
+What kind of input would cause the `is_even` function to print a warning?
                       
 ## Snippet 3
 
-~~~r
+```r
 text <- 'The computing world has undergone a revolution since the publication of "The C Programming Language" in 1978.'
 word <- 'revolution'
 n <- nchar(word)
@@ -87,8 +87,8 @@ while (substring(text, i, i + n - 1) != word) {
         break
     }
 }
-~~~
+```
 
 What does this R code do?
 
-For any other `text`, if `i` is found to equal `0` at the end of the script, what does it mean about `text`?
+For any other `text`, if `i` is found to equal 0 at the end of the script, what does it mean about `text`?
