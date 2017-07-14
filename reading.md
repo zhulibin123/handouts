@@ -69,9 +69,9 @@ while (swapped) {
 
 ## Snippets
 
-#### Snippet 1
-
 Carefully "read" each of the following, unrelated, snippets of R code and answer the questions as you go.
+
+#### Snippet 1
 
 ```r
 values <- c(6, 42, 13, 2, 9, -8, 27)
