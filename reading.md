@@ -136,4 +136,4 @@ while (substring(text, i, i + n - 1) != word) {
 
 * What does this R code do?
 
-* For any other `text`, if `i` is found to equal 0 at the end of the script, what does it mean about `text`?
+* For some other `text` or `word`, what does it mean if `i` is found to equal 0 after running the code?
