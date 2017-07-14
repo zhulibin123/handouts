@@ -31,18 +31,18 @@ while (swapped) {
 ### Questions
 
 * What do you think the combination of characters `<-` means? What about the pattern `{...}`?
-  *
-  * 
+  *  
+  *  
     
 * Which pseudo-code step is implemented by the `if (...) {...}` block? What is the role of `a`?
-  *
-  *
+  *  
+  *  
 
 * What word in the code instructs the computer to repeat something for an unspecified number of times? What word causes something to repeat a fixed number of times?
-  *
+  *  
 
 * If you don't trust it works, pretend to "compute" the procedure for the array of letters ['q', 'e', 'd'].
-  * 
+  *  
 
 ## Snippet 1
 
