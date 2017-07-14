@@ -12,7 +12,7 @@ The "bubble sort" algorithm is a procedure for sorting. If the input is a collec
 
 The following is a script in the R programming language that implements bubble sort, beginning from the assumption that `A` already refers to an array of letters.
 
-~~~r
+```r
 n <- length(A)
 swapped <- TRUE
 while (swapped) {
@@ -26,37 +26,39 @@ while (swapped) {
         }
     }
 }
-~~~
+```
 
-### Questions
+#### Questions
 
 * What do you think the combination of characters `<-` means? What about the pattern `{...}`?
-  *  
-  *  
-    
+
 * Which pseudo-code step is implemented by the `if (...) {...}` block? What is the role of `a`?
-  *  
-  *  
 
 * What word in the code instructs the computer to repeat something for an unspecified number of times? What word causes something to repeat a fixed number of times?
-  *  
 
 * If you don't trust it works, pretend to "compute" the procedure for the array of letters ['q', 'e', 'd'].
-  *  
 
-## Snippet 1
+## Snippets
+
+#### Snippet 1
+
+Carefully "read" each of the following, unrelated, snippets of R code and answer the questions as you go.
 
 ```r
 values <- c(6, 42, 13, 2, 9, -8, 27)
 total <- 0
-for (i in 1:length(values) {
+for (i in 1:length(values)) {
     total <- total + values[i]
 }
 ```
 
-What does this R code do?
+#### Questions
 
-## Snippet 2
+* What does this R code achieve in the final value of `total`?
+
+* What do you think the expression `1:length(values)`, used in the `for (...) {...}` block, establishes?  
+
+#### Snippet 2
 
 ```r
 test_value <- 98
@@ -77,13 +79,15 @@ if (!evenness(test_value)) {
 }
 ```
 
-What does this R code do?
+#### Questions
 
-What does `!` mean?
+* What does this R code do?
 
-What kind of input would cause the `is_even` function to print a warning?
+* What does `!` mean?
+
+* What kind of input would cause the `is_even` function to print a warning?
                       
-## Snippet 3
+#### Snippet 3
 
 ```r
 text <- 'The computing world has undergone a revolution since the publication of "The C Programming Language" in 1978.'
@@ -99,6 +103,8 @@ while (substring(text, i, i + n - 1) != word) {
 }
 ```
 
-What does this R code do?
+#### Questions
 
-For any other `text`, if `i` is found to equal 0 at the end of the script, what does it mean about `text`?
+* What does this R code do?
+
+* For any other `text`, if `i` is found to equal 0 at the end of the script, what does it mean about `text`?
