@@ -38,6 +38,35 @@ while (swapped) {
 
 * If you don't trust it works, pretend to "compute" the procedure for the array of letters ['q', 'e', 'd'].
 
+The following script achieves the same thing, but "modularizes" step 6; it seperates out the code for swapping. Identify how the script is different as you read.
+
+```r
+swap <- function(i, x) {
+    lesser <- x[i + 1]
+    x[i + 1] <- x[i] 
+    x[i] <- lesser
+    return(x)
+}
+
+n <- length(A)
+swapped <- TRUE
+while (swapped) {
+    swapped <- FALSE
+    for (i in seq(1, n - 1)) {
+        if (A[i+1] < A[i]) {
+            A <- swap(i, A)
+            swapped <- TRUE
+        }
+    }
+}
+```
+
+#### Question
+
+* What is the name of the new `function`?
+
+* What is one advantage or disadvantage to writing this script as two "modules"?
+
 ## Snippets
 
 #### Snippet 1
