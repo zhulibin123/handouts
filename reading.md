@@ -61,7 +61,7 @@ while (swapped) {
 }
 ```
 
-#### Question
+#### Questions
 
 * What is the name of the new `function`?
 
