@@ -1,5 +1,5 @@
 # User Interface
-... <- navbarPage(title = 'Hello, Shiny World!')
+... <- ...(title = 'Hello, Shiny World!')
 
 # Server
 ... <- function(...){}

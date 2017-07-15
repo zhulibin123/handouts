@@ -7,12 +7,12 @@ in1 <- selectInput(...,
                    label = 'Pick a species',
                    choices = ...)
 ...
-...
+tab <- ...
 ui <- navbarPage(title = 'Portal Project', ...)
 
 # Server
-server <- function(input, output) {
-  ... <- ...(input[['pick_species']])
+server <- function(...) {
+  ... <- ...(input[[...]])
 }
 
 # Create the Shiny App

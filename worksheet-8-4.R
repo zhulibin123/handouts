@@ -4,7 +4,7 @@ library(dplyr)
 
 # Data
 species <- read.csv('data/species.csv', stringsAsFactors = FALSE)
-surveys <- read.csv('data/animals.csv', na.strings = '', stringsAsFactors = FALSE)
+animals <- read.csv('data/animals.csv', na.strings = '', stringsAsFactors = FALSE)
 
 # User Interface
 in1 <- selectInput(inputId = 'pick_species',
@@ -12,9 +12,9 @@ in1 <- selectInput(inputId = 'pick_species',
                    choices = unique(species[['id']]))
 in2 <- ...('slider_months',
                    ...,
-                   min = 1,
-                   max = 12, 
-                   value = ...)
+                   ...,
+		   ...,
+		   ...)
 side <- sidebarPanel('Options', ...)
 out2 <- plotOutput('species_plot')
 main <- mainPanel(out2)
@@ -24,15 +24,25 @@ ui <- navbarPage('Portal Project', tab)
 
 # Server
 server <- function(input, output) {
-  ...
+
+  ... <- reactive(
+      ...
+      ...
+  )
   
   output[['species_plot']] <- renderPlot(
-    surveys %>%
-    filter(id == input[['pick_species']]) %>%
-    ...
+    animals %>%
+      filter(id == input[['pick_species']]) %>%
+      ...
     ggplot(aes(year)) +
-    geom_bar()
+      geom_bar()
   )
+
+ ... <- renderDataTable(
+    ...
+    ...
+    ...
+ )
 }
 
 # Create the Shiny App
