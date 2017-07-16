@@ -10,9 +10,14 @@ counts_df <- data.frame(
 ## Reshaping multiple columns in category/value pairs
 
 library(tidyr)
-counts_gather <- gather(counts_df, ...)
+counts_gather <- gather(counts_df,
+                        ...,
+                        ...,
+                        ...)
 
-counts_spread <- spread(counts_gather, ...)
+counts_spread <- spread(counts_gather,
+                        ...,
+                        ...)
 
 ## Exercise 1
 
@@ -20,16 +25,29 @@ counts_spread <- spread(counts_gather, ...)
 
 ## Read comma-separated-value (CSV) files
 
-surveys <- ...
+animals <- ...
+
+animals <- read.csv('data/animals.csv', )
+
+library(dplyr)
+library(...)
+
+con <- ...(..., host = 'localhost', dbname = 'portal')
+animals_db <- ...
+animals <- ...
+dbDisconnect(...)
 
 ## Subsetting and sorting
 
 library(dplyr)
-surveys_1990_winter <- filter(...)
+animals_1990_winter <- filter(...,
+                              ...,
+                              ...)
 
-surveys_1990_winter <- select(surveys_1990_winter, ...)
+animals_1990_winter <- select(animals_1990_winter, ...)
 
-sorted <- ...(surveys_1990_winter, ...)
+sorted <- ...(animals_1990_winter,
+              ...)
 
 ## Exercise 2
 
@@ -37,7 +55,7 @@ sorted <- ...(surveys_1990_winter, ...)
 
 ## Grouping and aggregation
 
-surveys_1990_winter_gb <- group_by(...)
+animals_1990_winter_gb <- group_by(...)
 
 counts_1990_winter <- summarize(..., count = n())
 
@@ -45,15 +63,16 @@ counts_1990_winter <- summarize(..., count = n())
 
 ...
 
-## Pivto tables through aggregate and spread
+## Pivot tables through aggregate and spread
 
-surveys_1990_winter_gb <- group_by(surveys_1990_winter, ...)
-counts_by_month <- ...(surveys_1990_winter_gb, ...)
+animals_1990_winter_gb <- group_by(animals_1990_winter, ...)
+counts_by_month <- ...(animals_1990_winter_gb, ...)
 pivot <- ...
 
 ## Transformation of variables
 
-prop_1990_winter <- mutate(...)
+prop_1990_winter <- mutate(...,
+                           ...)
 
 ## Exercise 4
 
@@ -61,7 +80,7 @@ prop_1990_winter <- mutate(...)
 
 ## Chainning with pipes
 
-prop_1990_winter_piped <- surveys %>%
+prop_1990_winter_piped <- animals %>%
   filter(year == 1990, month %in% 1:3)
   ... # select all columns but year
   ... # group by species_id
