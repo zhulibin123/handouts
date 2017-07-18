@@ -49,3 +49,9 @@ Maryland county boundaries extracted from the US Census [county boundaries
 shapefile](http://www2.census.gov/geo/tiger/GENZ2014/shp/cb_2014_us_county_500k.zip).
 
 ---
+
+`huc250k/*`
+
+1:250,000-scale Hydrologic Units of the United States published by the U.S. Geological Survey as a [shapefile with associated metadata](https://water.usgs.gov/GIS/metadata/usgswrd/XML/huc250k.xml).
+
+---
