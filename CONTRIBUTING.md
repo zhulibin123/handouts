@@ -1,6 +1,6 @@
 # Welcome to a SESYNC Training Event
 
-This document explains how to contribute work to your own GitHub repository, while keeping a link to the [SESYNC-ci/handouts](https://github.com/SESYNC-ci/handouts) repo for any updates. So you get the right instructions, choose how you created your own copy of the repository:
+This document explains how to contribute work to your own GitHub repository, while keeping a link to the [SESYNC-ci/handouts] repo for any updates. So you get the right instructions, choose how you created your own copy of the repository:
 
 - [I made a local clone of SESYNC-ci/handouts.](#local-clone)
 - [I *imported* SESYNC-ci/handouts on GitHub.](#github-import)
@@ -45,4 +45,4 @@ By forking from [SESYNC-ci/handouts] on GitHub, you have effectively become the 
 
 Your fork remains linked to the original repository, which you can use to update your repository with changes made by the instructor on [SESYNC-ci/handouts] if necessaryy. Issue a '[pull request](https://help.github.com/articles/about-pull-requests/)' directly from GitHub with the 'base fork' set to your fork and the 'head fork' set to [SESYNC-ci/handouts] (i.e. the reverse of the default settings for a new pull request). Then merge your pull request.
 
-[SESYNC-ci/handouts](https://github.com/sesync-ci/handouts)
+[SESYNC-ci/handouts]: https://github.com/sesync-ci/handouts
