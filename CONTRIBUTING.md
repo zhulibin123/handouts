@@ -1,6 +1,6 @@
 # Welcome to a SESYNC Training Event
 
-This document explains how to contribute work to your own GitHub repository, while keeping a link to the [SESYNC-ci/handouts](https://github.com/SESYNC-ci/handouts) repo for any updates. So you get the right instructions, choose how you created your own copy of the repository?
+This document explains how to contribute work to your own GitHub repository, while keeping a link to the [SESYNC-ci/handouts](https://github.com/SESYNC-ci/handouts) repo for any updates. So you get the right instructions, choose how you created your own copy of the repository:
 
 - [I made a local clone of SESYNC-ci/handouts.](#local-clone)
 - [I *imported* SESYNC-ci/handouts on GitHub.](#github-import)
