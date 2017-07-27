@@ -37,11 +37,11 @@ It could also be useful to set up a link to the original [SESYNC-ci/handouts] re
 
     git remote add upstream https://github.com/sesync-ci/handouts.git
 
-To merge changes from "upstream", you can now execute `git pull upstream master` from a shell anytime to integrate new commits from [SESYNC-ci/handouts]. Be warned though, after your course is over the [SESYNC-ci/handouts] repository could change dramatically for the next course!
+To merge changes from "upstream", you can now execute `git pull upstream master` from a shell anytime to integrate new commits from [SESYNC-ci/handouts]. Be warned though, after your course is over the original repository could change dramatically for the next course!
 
 ## GitHub Fork
 
-By forking from [SESYNC-ci/handouts] on GitHub, you have effectively become the owner of a mirror of the handouts repository. You have full control over this copy, to clone, push, and add collaborators. Once you have created a local clone, for example, you'll be able to push commits up to your repository with a simple `git push`.
+By forking from [SESYNC-ci/handouts] on GitHub, you have become the owner of a mirror of the handouts repository that automatically sets your mirror "downstream" of the original. You have full control over this copy, to clone, push, and add collaborators. Once you have created a local clone, for example, you'll be able to push commits up to your repository with a simple `git push`.
 
 Your fork remains linked to the original repository, which you can use to update your repository with changes made by the instructor on [SESYNC-ci/handouts] if necessaryy. Issue a '[pull request](https://help.github.com/articles/about-pull-requests/)' directly from GitHub with the 'base fork' set to your fork and the 'head fork' set to [SESYNC-ci/handouts] (i.e. the reverse of the default settings for a new pull request). Then merge your pull request.
 
