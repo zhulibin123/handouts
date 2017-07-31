@@ -10,4 +10,4 @@ Most trainees will clone this repository during a short course. Instructions for
 
 ## Past Events
 
-**Following** a short course, the worksheets and data will be archived as a zip file. To get the handouts from a past short course: navigate to [releases](../../releases), select your course by its starting date, and download `handouts.zip`. The zip does not contain a git repository—only the worksheets and necessary data.
+**Following** a short course, the worksheets and data will be archived as a zip file. To get the handouts from a past short course: navigate to [releases](https://github.com/sesync-ci/handouts/releases), select your course by its starting date, and download `handouts.zip`. The zip does not contain a git repository—only the worksheets and necessary data.
