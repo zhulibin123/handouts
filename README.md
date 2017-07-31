@@ -4,9 +4,11 @@ A `README.md` file is a very useful component of any project repository. As you 
 
 ## About
 
-The purpose of this repository is to distribute handouts during a SESYNC training event. The content changes between short courses, but it typically includes worksheets for different tutorials and any necessary data.
+The purpose of this repository is to distribute handouts during a SESYNC training event. The content changes between short courses, but it typically includes the worksheets for severl lessons. Most trainees will import this repository during a short course. Instructions for creating your own GitHub repository will be given during the course and are also described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Most trainees will clone this repository during a short course. Instructions for creating your own "origin" repository will be given during the course and are also described in [CONTRIBUTING.md](CONTRIBUTING.md).
+## Data
+
+[Download](https://files.sesync.org/pydio/public/09bb83) a zipped data file that accompanies the worksheets. A typical data-synthesis pipeline keeps the data and source code in separate locations&mdash;we'll do the same for this short course.
 
 ## Past Events
 
