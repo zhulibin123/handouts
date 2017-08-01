@@ -1,23 +1,26 @@
 ## Tidy data concept
 
-counts_df <- data.frame(
-  day = c("Monday", "Tuesday", "Wednesday"),
-  wolf = c(2, ...),
-  hare = ...,
-  ...
+response <- data.frame(
+  trial = 1:3,
+  treatment = c(0.22, 0.58, 0.31),
+  control = c(0.42, 0.19, 0.40)
 )
 
 ## Reshaping multiple columns in category/value pairs
 
 library(tidyr)
-counts_gather <- gather(counts_df,
-                        ...,
-                        ...,
-                        ...)
 
-counts_spread <- spread(counts_gather,
-                        ...,
-                        ...)
+df <- gather(...)
+
+counts <- data.frame(
+  site = ...,
+  species = ...,
+  n = c(2, 341, 7, 42, 0, 289)
+)
+
+counts_spread <- ...(counts,
+			...,
+			...)
 
 ## Exercise 1
 
@@ -53,36 +56,50 @@ sorted <- ...(animals_1990_winter,
 
 ...
 
+## Chainning with pipes
+
+sorted_pipe <- animals %>%
+    ... # filter to the first 3 months of 1990
+    ... # select all columns but year
+    ... # sort with descening species_id and weight
+
 ## Grouping and aggregation
 
-animals_1990_winter_gb <- group_by(...)
+counts_1990_winter <- animals_1990_winter %>%
+    group_by(...) %>%
+    ...
 
-counts_1990_winter <- summarize(..., count = n())
+weight_1990_winter <- animals_1990_winter %>%
+    ...
+    summarize(avg_weight = mean(...))
 
 ## Exercise 3
 
 ...
 
-## Pivot tables through aggregate and spread
-
-animals_1990_winter_gb <- group_by(animals_1990_winter, ...)
-counts_by_month <- ...(animals_1990_winter_gb, ...)
-pivot <- ...
-
 ## Transformation of variables
 
-prop_1990_winter <- mutate(...,
-                           ...)
+prop_1990_winter <- counts_1990_winter %>%
+    mutate(...)
 
 ## Exercise 4
 
 ...
 
-## Chainning with pipes
+## Database Connection
 
-prop_1990_winter_piped <- animals %>%
-  filter(year == 1990, month %in% 1:3)
-  ... # select all columns but year
-  ... # group by species_id
-  ... # summarize with counts
-  ... # mutate into proportions
+library(...)
+
+con <- ...(PostgreSQL(), host = 'localhost', dbname = 'portal')
+animals_db <- ...
+
+species_month_prop <- ...
+    group_by(species_id, month) %>%
+    summarize(count = n()) %>%
+    mutate(prop = count / sum(count)) %>%
+    select(-count)
+
+pivot <- ...
+  spread(month, prop, fill = 0)
+
+dbDisconnect(con)

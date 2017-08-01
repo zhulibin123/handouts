@@ -9,7 +9,7 @@ vals <- seq(...,
 
 counts ...
 
-## Exercise 2
+## Exercise 1
 
 ...
 
@@ -26,7 +26,7 @@ education <- ...(c("college", "highschool", "college", "middle"),
 
 ... data.frame(...)
 
-## Exercise 3
+## Exercise 2
 
 ...
 
@@ -35,7 +35,7 @@ education <- ...(c("college", "highschool", "college", "middle"),
 plots <- ...(...)
 animals <- ...(...)
 
-## Exercise 4
+## Exercise 3
 
 ...
 
@@ -49,26 +49,9 @@ days <- c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sat
 weekdays <- ...
 ...
 
-## Exercise 5
+## Exercise 4
 
 ...
-
-
-## Exercise 6
-
-...
-
-## Base plotting
-
-plot(..., ...)
-
-## Histograms
-
-...(surveys$...)
-
-## Boxplots
-
-boxplot(...)
 
 ## Anatomy of a function
 
@@ -93,21 +76,20 @@ firts <- function(...) {
     }
 }
 
-## Exercise 7
+## Linear models
+
+animals <- read.csv(..., stringsAsFactors = FALSE, na.strings = '')
+fit <- lm(
+  ...,
+  data = ...)
+
+## Exercise 6
 
 ...
 
-## Distributions and statistics
+## Pay attention to factors
 
-samp <- ...
-
-
-x <- rnorm(..., mean = .., sd = ...)
-y <- r...(n = 100, size = 50, ...)
-
-fit <- ...
-
-## Exercise 8
-
-...
-
+animals$species_id <- ...
+fit <- lm(
+  log(weight) ~ ...,
+  data = animals)
