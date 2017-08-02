@@ -10,27 +10,29 @@ response <- data.frame(
 
 library(tidyr)
 
-df <- gather(...)
+df <- gather(response,key="factor", value="response", -trial)
 
 counts <- data.frame(
-  site = ...,
-  species = ...,
+  site = rep(1:3, each=2),
+  species = rep(c('lynx','hare'),3),
   n = c(2, 341, 7, 42, 0, 289)
 )
 
-counts_spread <- ...(counts,
-			...,
-			...)
+counts_spread <- spread(counts,
+			key=species,
+			value=n)
 
 ## Exercise 1
 
-...
+df2<-counts[-5,]
 
+spread(df2, key=species, value=n, fill=0)
+  
 ## Read comma-separated-value (CSV) files
 
-animals <- ...
+animals <- read.csv('data/animals.csv')
 
-animals <- read.csv('data/animals.csv', )
+animals <- read.csv('data/animals.csv',na.strings = "" )
 
 library(dplyr)
 library(...)
@@ -43,14 +45,15 @@ dbDisconnect(...)
 ## Subsetting and sorting
 
 library(dplyr)
-animals_1990_winter <- filter(...,
-                              ...,
-                              ...)
+animals_1990_winter <- filter(animals,
+                              year==1990,
+                              month %in% 1:3)
 
-animals_1990_winter <- select(animals_1990_winter, ...)
+animals_1990_winter <- select(animals_1990_winter, -year)
 
-sorted <- ...(animals_1990_winter,
-              ...)
+sorted <- arrange(animals_1990_winter,
+              desc(species_id),
+              weight)
 
 ## Exercise 2
 

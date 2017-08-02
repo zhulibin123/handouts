@@ -1,6 +1,5 @@
 #!/bin/sh
 
-## Configure git
 git config --global user.name zhulibin123
 git config --global user.email zhulibin@email.arizona.edu
 
